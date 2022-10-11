@@ -1,0 +1,7 @@
+<div class="container m-0 p-0" *ngIf="data$ | async as data">
+  <div class="col d-inline-flex p-2" *ngFor="let employees of data">
+    <div class="d-inline-none">   <img width="120" height="150" [src]='employees.image'>
+    <p >{{employees.name}}</p></div>
+  </div>
+</div>
+
